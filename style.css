@@ -146,6 +146,10 @@ body {
     padding: 10px 20px; /* Adjust padding */
     font-size: 16px; /* Adjust font size */
   }
+  .search button {
+    width: 50px;
+  }
+
   .weather-icon {
     width: 150px; /* Adjust icon size */
   }
@@ -176,6 +180,9 @@ body {
   .search input {
     padding: 8px 15px; /* Adjust padding */
     font-size: 14px; /* Adjust font size */
+  }
+  .search button {
+    width: 40px;
   }
   .weather-icon {
     width: 120px; /* Adjust icon size */
