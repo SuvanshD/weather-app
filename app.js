@@ -43,3 +43,32 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
 });
+
+// Existing code...
+
+document.getElementById("myLocationBtn").addEventListener("click", () => {
+  getLocationAndUpdateInput();
+});
+
+function getLocationAndUpdateInput() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&addressdetails=1`;
+
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          const pinCode = data.address.postcode;
+          searchBox.value = pinCode; // Update the search input with the pin code
+          checkWeather(pinCode); // Optionally, directly check the weather for the retrieved pin code
+        })
+        .catch((error) =>
+          console.error("Error fetching location name:", error)
+        );
+    });
+  } else {
+    console.error("Geolocation is not supported by this browser.");
+  }
+}
