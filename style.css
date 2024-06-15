@@ -12,8 +12,34 @@ body {
 .card {
   width: 90%;
   max-width: 470px;
+
+  /* first */
   background: linear-gradient(135deg, #00feba, #5b548a);
-  color: #fff;
+
+  /* gradient aesthetic background  */
+  background: linear-gradient(180deg, #e1e1e1, #5e9396);
+
+  /* rainy */
+  background: linear-gradient(180deg, #e1e1e1, #5b548a);
+
+  /* clear */
+  /* background: linear-gradient(180deg, #e1e1e1, #faba60); */
+
+  /* matte textured background */
+  /* background-color: #f0a35b; */
+
+  /* background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 25%,
+      transparent 25%
+    ),
+    linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+  background-size: 0.5px 0.5px; */
+  /* Adjust the size of the pattern */
+
+  color: #000000;
   margin: 50px auto;
   border-radius: 20px;
   padding: 40px 35px;
@@ -38,6 +64,7 @@ body {
   flex: 1;
   margin-right: 16px;
   font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search button {
@@ -48,6 +75,7 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search button img {
