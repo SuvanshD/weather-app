@@ -137,6 +137,7 @@ body {
   .card {
     width: 85%; /* Adjust width for smaller screens */
     padding: 20px 20px; /* Adjust padding */
+    margin: 25px auto;
   }
   .search input,
   .search button {
@@ -172,6 +173,7 @@ body {
   .card {
     width: 95%; /* Further adjust width for very small screens */
     padding: 15px 15px; /* Adjust padding */
+    margin: 20px auto;
   }
   .search input,
   .search button {
