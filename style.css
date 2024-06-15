@@ -68,19 +68,29 @@ body {
 }
 
 .search button {
-  border: 0;
-  outline: 0;
-  background: #ebfffc;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
+  background-color: #ebfffc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-style: none;
+  cursor: pointer;
+  padding: 12px;
 }
 
-.search button img {
-  width: 16px;
+#myLocationBtn {
+  /* width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ebfffc; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  /*cursor: pointer;
+  padding: 12px; */
 }
+
+/* .search button img {
+  width: 16px;
+} */
 
 .weather-icon {
   width: 170px;
@@ -149,8 +159,15 @@ body {
   }
   .search button {
     width: 50px;
+    margin-left: 10px;
   }
 
+  #myLocationBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 12px;
+  }
   .weather-icon {
     width: 150px; /* Adjust icon size */
   }
@@ -185,6 +202,7 @@ body {
   }
   .search button {
     width: 40px;
+    margin-left: 10px;
   }
   .weather-icon {
     width: 120px; /* Adjust icon size */
